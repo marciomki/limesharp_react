@@ -110,8 +110,8 @@
 
 .modal {
   position: absolute;
-  width: 40vw;
-  left: 30vw;
+  width: 40%;
+  left: 30%;
   border-radius: 4px;
   margin-top: 20px;
   background: white;
@@ -128,7 +128,50 @@
   text-align: left;
   padding: 30px 30px;
 }
+.menu {
+  display: flex;
+  justify-content: space-between;
+  .button {
+    padding: 10px 100px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background-color: rgb(191, 179, 196);
+  }
+}
+  
 @media (max-width: 600px) {
+  .modal {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    transition: 0.5s ease-out;
+    box-shadow: -2px 5px 5px rgba(black, 0.2);
+    filter: blur(0);
+    transform: scale(1);
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px 30px;
+  }
+  .menu {
+    flex-direction: column;
+    .button {
+      margin-bottom: 10px;
+    }
+    .button:hover {
+      background-color: rgb(191, 179, 196);
+    }
+  }
   .grid {
     width: 100%;
     flex-direction: column;
